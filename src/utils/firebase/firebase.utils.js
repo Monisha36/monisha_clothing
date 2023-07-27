@@ -81,4 +81,4 @@ if(!email || !password) return;
 export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callback) => 
-  onAuthStateChanged(auth, callback, errorCallback, completedCallback);
+  onAuthStateChanged(auth, callback);
